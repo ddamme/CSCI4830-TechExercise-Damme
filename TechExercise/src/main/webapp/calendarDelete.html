@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+header
+{
+	background-color: green;
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
+nav
+{
+	line-height: 30px;
+	background-color: gray;
+	height: 500px;
+	width: 150px;
+	float: left;
+	padding: 5px;
+}
+section
+{
+	width: 350px;
+	float: left;
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+<header>
+	<h1>Delete Events</h1>
+</header>
+
+<nav>
+	<a href="/TechExercise/calendarHome.html">Calendar Home</a> <br>
+	<a href="/TechExercise/calendarSearch.html">Search Events</a> <br>
+	<a href="/TechExercise/calendarInsert.html">Insert Events</a> <br>
+</nav>
+
+<section>
+	<div>Enter the information of the event that you want to delete in the calendar in the appropriate boxes below.</div>
+	<div>If you leave some boxes blank, all of the events that match the criteria of the other filled-in boxes will be deleted.</div>
+	<div>For example, if you just enter, 'Home' for the location box, all events with a location of 'Home' will be deleted.</div>
+	<div>Date Format: (YYYY-MM-DD)</div>
+	<div>Time Format: (HH:MM:SS)</div>
+	<h2>User Input</h2>
+	<form action="CalendarDelete" method="POST">
+		Name: <input type="text" name="name"> <br />
+		Date: <input type="text" name="date"> <br />
+		Time: <input type="text" name="time"> <br />
+		Location: <input type="text" name="location"> <br />
+		<input type="submit" value="Submit" />
+	</form>
+</section>
+
+</body>
+</html>
